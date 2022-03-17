@@ -24,12 +24,17 @@ export const MemeList = () => {
 
     return (
         <div>
-            <h1>Meme Viewer</h1>
+            <nav id="navbar" class="navbar navbar-light bg-dark">
+                <a title="Click here!" id="logo" class="navbar-brand" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                    <img src="trollface.png" width="100" height="75"  alt="" />
+                </a>
+                <h1 class="navbar-brand text-light">Meme Reviewer</h1>
+            </nav>
             <Container>
-                <Row>
+                <Row style={{padding: '5%'}}>
                     {memes.map((meme, k) => (
-                        <Col key={k} xs={12} md={4} lg={3}>
-                            <Card >
+                        <Col key={k} xs={12} md={5} lg={3}>
+                            <Card className="text-white bg-dark mb-3">
                                 <Card.Img src={meme.imagePath} />
 
                                 <Card.Body>
@@ -41,6 +46,7 @@ export const MemeList = () => {
                     ))}
                 </Row>
             </Container>
+
         </div>
     )
 }
