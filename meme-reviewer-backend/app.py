@@ -21,7 +21,7 @@ CORS(app)
 
 @app.route('/health')
 def health():
-    return 'Meme reviewer is working successfully!'
+    return 'Meme reviewer is running!'
 
 @app.route('/api/meme')
 def get_meme_info():
