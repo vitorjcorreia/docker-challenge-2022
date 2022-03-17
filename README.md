@@ -23,7 +23,9 @@
 
 3. How can you pass a different backend URL to the application using the Docker CLI (e.g. docker run)? And using the `docker-compose.yml`?
 
-## Optimizing build process of Docker images
+## Optimizing build process and size of Docker images
 
-1. Try to optimize the frontend image now deriving it from the `nginx:latest` image. Tip: `npm start` does not build the application right?
+1. Try to optimize the frontend image now deriving it from the `nginx:latest` image. 
+    * Tip 1: `npm start` does not build the application right?
+    * Tip 2: How about multistage builds?
 
